@@ -1,11 +1,11 @@
 # node-python-pdf-highlight
 
-A simple Node.js and Python integration to highlight text in PDF files. The Node.js script executes a Python script (using PyMuPDF or Spire.PDF) to search for specific words and highlight them with customizable colors. Ideal for document processing and automated text markup workflows.
+A simple Node.js and Python integration to highlight text in PDF files. The Node.js script executes a Python script (using PyMuPDF) to search for specific words and highlight them with customizable colors. Ideal for document processing and automated text markup workflows.
 
 ## 🚀 Features
 - Highlight specific words or phrases in PDF files.
 - Customizable highlight colors (RGB format).
-- Supports both PyMuPDF and Spire.PDF for PDF processing.
+- Supports PyMuPDF for PDF processing.
 - Cross-platform compatibility (macOS, Linux, Windows).
 
 ## 🛠️ Requirements
