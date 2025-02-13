@@ -17,9 +17,10 @@ A simple Node.js and Python integration to highlight text in PDF files. The Node
 ## 📂 Project Structure
 ```
 📂 node-python-pdf-highlight
-├── highlightPdf.js            # Node.js script to execute Python script
+├── index.js            # Node.js script to execute Python script
 ├── highlight_pdf.py           # Python script using PyMuPDF
-├── highlight_pdf_spire.py     # Python script using Spire.PDF
+├── input.pdf     # Dummy PDF file
+├── output.pdf     # Dummy output PDF file
 └── README.md
 ```
 
@@ -35,36 +36,17 @@ A simple Node.js and Python integration to highlight text in PDF files. The Node
    ```
 3. Install Python dependencies:
    ```bash
-   pip install pymupdf spire.pdf
+   pip install pymupdf
    ```
 
 ## 🚀 Usage
 ### 1️⃣ Using PyMuPDF:
 ```javascript
-const { highlightPdf } = require('./highlightPdf');
-
 const highlights = {
-  "0": ["example", "highlight"],
-  "1": ["important"]
+    "0": ["Lorem Ipsum", "Test", "1960s", "desktop"],  
+   
 };
-
-highlightPdf('input.pdf', 'output.pdf', highlights, [1, 1, 0])
-  .then(response => console.log(response))
-  .catch(error => console.error(error));
-```
-
-### 2️⃣ Using Spire.PDF:
-```javascript
-const { highlightPdf } = require('./highlightPdfSpire');
-
-const highlights = {
-  "0": ["example", "highlight"],
-  "1": ["important"]
-};
-
-highlightPdf('input.pdf', 'output.pdf', highlights, [0, 1, 0])
-  .then(response => console.log(response))
-  .catch(error => console.error(error));
+App.getHighlightPDFContent('input.pdf', 'output.pdf', highlights, [0, 0, 1]).then(console.log).catch(console.error);
 ```
 
 ## 🎨 Color Format
@@ -74,13 +56,7 @@ highlightPdf('input.pdf', 'output.pdf', highlights, [0, 1, 0])
   - Blue: `[0, 0, 1]`
   - Yellow: `[1, 1, 0]` (default)
 
-## 🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-This project is licensed under the MIT License.
-
 ---
-**Author:** Your Name  
-**GitHub:** [yourusername](https://github.com/yourusername)
+**Author:** Hardik Patel  
+**GitHub:** [hardikkumarpatel](https://github.com/hardikkumarpatel)
 
