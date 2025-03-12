@@ -1,0 +1,19 @@
+{
+    "pdf_path": "highlighted1.pdf",
+    "output_path": "out.pdf",
+    "highlights": {
+        "0": [
+            "Inter",
+            "Follow",
+            "Optionally"
+        ],
+        "1": [
+            "Follow"
+        ],
+        "2": [
+            "Back",
+            "shares",
+            "number"
+        ]
+    }
+}
